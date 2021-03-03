@@ -5,7 +5,6 @@ const fetch = require('node-fetch');
 
 const sms_send = async (data) => {
     // let data = await data.json()
-
     let to = data.to;
     let from = data.from;
     let content = data.content;
@@ -23,6 +22,7 @@ const sms_send = async (data) => {
         if (error) throw new Error(error);
         console.log(response.body);
     });
+    console.log('message sent successfully')
 }
 
 module.exports = sms_send;
