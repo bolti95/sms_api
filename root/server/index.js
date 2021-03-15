@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const port = 3006;
-require('dotenv').config;
+require('dotenv').config();
 
 // init app
 const app = express();
